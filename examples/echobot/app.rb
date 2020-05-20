@@ -2,7 +2,7 @@ require 'sinatra'   # gem 'sinatra'
 require 'line/bot'  # gem 'line-bot-api'
 
 get '/' do
-  "Hello World"
+  "Hello there"
 end
 
 # def client
