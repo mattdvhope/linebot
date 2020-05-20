@@ -2,6 +2,10 @@
 
 [![Gem-version](https://img.shields.io/gem/v/line-bot-api.svg)](https://rubygems.org/gems/line-bot-api) [![Build Status](https://travis-ci.org/line/line-bot-sdk-ruby.svg?branch=master)](https://travis-ci.org/line/line-bot-sdk-ruby)
 
+## To run locally...
+$ bundle exec rackup -p 9292 config.ru &
+$ kill -9 [latest PID]
+
 
 ## Introduction
 The LINE Messaging API SDK for Ruby makes it easy to develop bots using LINE Messaging API, and you can create a sample bot within minutes.
