@@ -6,6 +6,10 @@
 $ bundle exec rackup -p 9292 config.ru &
 $ kill -9 [latest PID]
 
+## To run in production/Heroku...
+...in Procfile...
+web: bundle exec rackup config.ru -p $PORT
+
 
 ## Introduction
 The LINE Messaging API SDK for Ruby makes it easy to develop bots using LINE Messaging API, and you can create a sample bot within minutes.
