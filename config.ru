@@ -1,2 +1,2 @@
-require './examples/echobot/app.rb'
+require './examples/kitchensink/app.rb'
 run Sinatra::Application
