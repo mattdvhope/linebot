@@ -123,7 +123,8 @@ def handle_message(event)
         profile = JSON.parse(profile.read_body)
         reply_text(event, [
           "Display name\n#{profile['displayName']}",
-          "Status message\n#{profile['statusMessage']}"
+          # "Status message\n#{profile['statusMessage']}"
+          "Status message\n#{profile.to_s}"
         ])
       else
         reply_text(event, "Bot can't use profile API without user ID")
