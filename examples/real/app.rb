@@ -148,6 +148,26 @@ def handle_message(event)
         }
       })
 
+    when 'idea'
+      reply_content(event, 
+      {
+        type: "template",
+        altText: "this is a buttons template",
+        template: {
+          type: "buttons",
+          actions: [
+            {
+              type: "uri",
+              label: "เชิญมาเยี่ยมชมเว็บไซ",
+              uri: "https://graceandtruthbkk.org/"
+            }
+          ],
+          thumbnailImageUrl: "https://cep-class-notes.s3-ap-southeast-1.amazonaws.com/Album1/asian-team.jpg",
+          title: "สวัสดีค่ะ",
+          text: "เราเป็น \"พระคุณและความจริง\""
+        }
+      })
+
     when 'confirm'
       reply_content(event, {
         type: 'template',
