@@ -20,7 +20,10 @@ post '/callback' do
 
   signature_verified = signature==signature_checked
 
-  unless client.validate_signature(body, signature) && signature_verified
+  p "signature: " + signature
+  p "signature_checked: " + signature_checked
+
+  unless client.validate_signature(body, signature)
     halt 400, {'Content-Type' => 'text/plain'}, 'Bad Request'
   end
 
