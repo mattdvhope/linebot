@@ -585,7 +585,8 @@ def handle_message(event)
       reply_text(event, "[STATS]\n#{stats.body}")
 
     else
-      reply_text(event, "[ECHO]\n#{event.message['text']}")
+      # reply_text(event, "[ECHO]\n#{event.message['text']}")
+      reply_text(event, "แอพ LINE ของเราค่อยู่ในระหว่างการปรับปรุง แต่ในไม่ช้าเราจะให้วิธีที่สนุกสำหรับคุณในการสื่อสารกับเราค่ะ")
 
     end
   else
