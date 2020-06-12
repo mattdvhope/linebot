@@ -56,7 +56,8 @@ post '/callback' do
       handle_message(event)
 
     when Line::Bot::Event::Follow
-      reply_text(event, "[FOLLOW]\nThank you for following")
+      reply_text(event, "ขอบคุณสำหรับการเยี่ยมชมเราค่ะ แอพ LINE ของเราค่อยู่ในระหว่างการปรับปรุง แต่ในไม่ช้าเราจะให้วิธีที่สนุกสำหรับคุณในการสื่อสารกับเราค่ะ")
+      # reply_text(event, "[FOLLOW]\nThank you for following")
 
     when Line::Bot::Event::Unfollow
       logger.info "[UNFOLLOW]\n#{body}"
